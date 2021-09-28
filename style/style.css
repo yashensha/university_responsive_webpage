@@ -6,6 +6,8 @@
 }
 
 
+
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -15,6 +17,7 @@
     position: relative;
 }
 
+/* -------Nav Bar----- */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -63,6 +66,8 @@ nav img {
 
 }
 
+/* --------Textbox-------- */
+
 .text-box {
 
     width: 90%;
@@ -106,7 +111,9 @@ nav .fas {
 }
 
 /* -------Responsive------- */
-@media(max-width:700px) {
+@media(max-width:720px) {
+
+
 
     .text-box h1 {
         font-size: 20px;
@@ -122,15 +129,15 @@ nav .fas {
     }
 
     .nav-links {
+
         background-color: #f44336;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: 0;
         position: absolute;
         z-index: 2;
         text-align: left;
-        transition: 0.5s;
     }
 
     nav .fas {
@@ -144,5 +151,10 @@ nav .fas {
 
     .nav-links ul {
         padding: 30px;
+    }
+
+    nav {
+        align-items: center;
+
     }
 }
